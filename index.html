@@ -15,7 +15,7 @@
         }
 
         header {
-            background-color: #e50914;
+            background-color: #DB0000;
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -26,7 +26,7 @@
         }
 
         footer {
-            background-color: #222;
+            background-color: #564D4D;
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -34,26 +34,64 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>🎞️My Netflix Data Analysis🍿🎞️</h1>
     </header>
 
     <main>
-        <h2>Welcome to My Netflix Data Analysis</h2>
-        <p>This is a sample HTML website with a color scheme inspired by Netflix.</p>
+        <section>
+            <h2>Introduction</h2>
+            <p>The motivation behind this data analysis stems from a desire to gain deeper insights into my viewing patterns on Netflix spanning the years 2020 to 2023.
+                By examining and analyzing the data related to my watching habits, this analysis aims to uncover trends,
+                preferences, and patterns in the content consumed. Understanding the distribution between TV shows and movies,
+                identifying favorite genres, exploring the most-watched shows, and delving into the temporal aspects of viewing such as daily and monthly patterns, will provide valuable information.
+                This exploration seeks to offer a comprehensive overview of my Netflix watching behavior, contributing to a better understanding of personal preferences and habits throughout this period.</p>
+        </section>
 
-        <h3>Features:</h3>
-        <ul>
-            <li>HTML5 structure</li>
-            <li>Header, Main Content, and Footer</li>
-            <li>Netflix-inspired color palette</li>
-        </ul>
+        <section>
+            <h2>Data Source</h2>
+            <p>Request data from Netflix on my family Netflix account & extract only my profile data.</p>
+            <p>Get data from Kaggle – Netflix Dataset (<a href="https://www.kaggle.com/datasets/shivamb/netflix-shows">Link</a>)</p>
+        </section>
+
+        <section>
+            <h2>Data Cleaning</h2>
+            <ol>
+                <li>Importing required libraries</li>
+                <li>Load the dataset into a dataframe</li>
+                <li>Analyze the variables & cleaning the data</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Exploratory Data Analysis</h2>
+
+            <h3>1. Content Analysis</h3>
+            <ul>
+                <li>(a) TV Show vs Movie (pie chart)</li>
+                <li>(b) Top 10 Most Watched Shows (horizontal bar)</li>
+                <li>(c) Favorite Genre - Genre Distribution (vertical bar)</li>
+                <li>(d) Netflix Shows by Country (treemap)</li>
+            </ul>
+
+            <h3>2. Watching Habits</h3>
+            <ul>
+                <li>(a) Watch Pattern by Day (violin graph)</li>
+                <li>(b) Watch Pattern by Hour (line graph)</li>
+                <li>(c) Genre throughout the Day (heatmap)</li>
+                <li>(d) Genre throughout the Month (stacked bar)</li>
+                <li>(e) Binge-Watcher</li>
+                <li>(f) Most Watched Month & Year (histogram) + What shows on that Month & Year</li>
+            </ul>
+
+            <h3>3. ______</h3>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+        </section>
+
     </main>
-
-    <footer>
-        <p>&copy; 2023 Netflix-inspired Website. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
