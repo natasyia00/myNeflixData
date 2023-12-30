@@ -3,7 +3,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     font-weight: 400;
-    background-color: #f5f5f5;
+    background-color: #fff;
     color: #333;
 }
 
@@ -41,9 +41,10 @@ a:hover {
 }
 
 pre[class*="language-python"] {
-    margin: 0; /* Add this line to remove default margin */
+    margin: 0;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
+    background-color: #dfdfdf;
     border-radius: 5px;
     overflow-x: auto;
 }
