@@ -18,8 +18,8 @@ h2, h3 {
 header {
     padding: 1em 0;
     text-align: center;
-    background-color: #564D4D;
-    color: #fff;
+    /* background-color: #564D4D; */
+    color: #000;
 }
 
 footer {
