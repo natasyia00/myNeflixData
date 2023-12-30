@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 style="color: #fff;">🎞️My Netflix Data Analysis🍿🎞️</h1>
+        <h1 style="color: #000;background-color: #fff;">🎞️My Netflix Data Analysis🍿🎞️</h1>
     </header>
 
     <main>
@@ -33,7 +33,7 @@
             <p>The 2nd dataset was downloaded from a supplementary source was (<a href="https://www.kaggle.com/datasets/shivamb/netflix-shows">Kaggle</a>) which is a platform that hosts various datasets for public use. 
                 The specific dataset used in this analysis, known as the "Netflix Dataset," was acquired from Kaggle.</p>
 
-            <p>With this 2 datasets, I combined both of them together to get the final dataset where it provides a comprehensive perspective on my Netflix viewing habits, merging personalized account data with a broader dataset available through Kaggle for a more extensive analysis.</p>
+            <p>With these 2 datasets, I combined both of them together to get the final dataset where it provides a comprehensive perspective on my Netflix viewing habits, merging personalized account data with a broader dataset available through Kaggle for a more extensive analysis.</p>
         </section>
 
         <hr>
@@ -42,17 +42,16 @@
             <h2>Data Cleaning</h2>
             <ol>
                 <li>Importing required libraries</li>
-                <pre>
-                    <code>
-                      function greet(name) {
-                        return "Hello, " + name + "!";
-                      }
-                  
-                      let result = greet("World");
-                      console.log(result);
-                    </code>
-                  </pre>
-                  
+                <pre><code class="language-python">
+                    import pandas as pd
+                    import numpy as np
+                    import matplotlib.pyplot as plt
+                    import seaborn as sns
+                    import math
+                    from datetime import timedelta
+                    import plotly.express as px
+                    import squarify
+                </code></pre>
                 <li>Load the dataset into a dataframe</li>
                 <li>Analyze the variables & cleaning the data</li>
             </ol>
