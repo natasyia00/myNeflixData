@@ -42,7 +42,7 @@ a:hover {
 
 .python {
     margin: 0;
-    border: 1px solid #ddd;
+    border: 2px solid #000;
     background-color: #dbdbdb;
     border-radius: 5px;
     overflow-x: auto;
