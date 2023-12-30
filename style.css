@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+header {
+    padding: 1em 0;
+    text-align: center;
+    background-color: #DB0000;
+    color: #fff;
+}
+
+footer {
+    background-color: #564D4D;
+    color: #fff;
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+a {
+    color: #DB0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add more styles as needed */
