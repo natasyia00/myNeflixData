@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploring My Netflix Data</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css" integrity="sha256-XjN1JNYnAP6IrZLwsKha6PJJ+nd9P3O/aCCPpxggFug=" crossorigin="anonymous" />
+    <style>
+        .python {
+            margin: 0; /* Add this line to remove default margin */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
 
 </head>
 <body>
@@ -42,7 +52,7 @@
             <h2>Data Cleaning</h2>
             <ol>
                 <li>Importing required libraries</li>
-                <pre><code class="language-python">
+                <pre><code class="python">
                     import pandas as pd
                     import numpy as np
                     import matplotlib.pyplot as plt
@@ -51,7 +61,7 @@
                     from datetime import timedelta
                     import plotly.express as px
                     import squarify
-                </code></pre>
+                </code></pre>                
                 <li>Load the dataset into a dataframe</li>
                 <li>Analyze the variables & cleaning the data</li>
             </ol>
