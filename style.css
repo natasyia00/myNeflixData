@@ -42,9 +42,8 @@ a:hover {
 
 .python {
     margin: 0;
-    padding: 5px; /* Adjust padding */
     border: 1px solid #ddd;
-    background-color: #a3a3a3;
+    background-color: #dbdbdb;
     border-radius: 5px;
     overflow-x: auto;
 }
