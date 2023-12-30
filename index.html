@@ -41,6 +41,13 @@
         <section>
             <h2>Data Cleaning</h2>
                 <h3>Importing required libraries</h3>
+                <p>To conduct comprehensive data analysis, a variety of powerful Python libraries were employed. 
+                    The primary data manipulation and analysis were performed using Pandas (imported as `pd`). NumPy (imported as `np`) was utilized for numerical operations and array handling. 
+                    For visualizations, the combination of Matplotlib (`plt`), Seaborn (`sns`), and Plotly Express (`px`) provided a diverse set of plotting capabilities, ranging from traditional charts to interactive visualizations. Mathematical operations were facilitated by the inclusion of the `math` module. 
+                    Additionally, the `timedelta` class from the `datetime` module allowed for time-based calculations. 
+                    Lastly, the `squarify` library was employed for creating treemaps, adding another layer of visual representation to the data exploration process.
+                </p>
+                  
             <pre class="python"><code>
             import pandas as pd
             import numpy as np
@@ -53,114 +60,120 @@
                 </code>
             </pre>            
                 <h3>Load the dataset into a dataframe</h3>
+                <p>The datasets were loaded into Pandas DataFrames to facilitate comprehensive analysis. 
+                    The primary dataset, obtained through a request from Netflix on my family's Netflix account, was loaded into a DataFrame named `netflix_data`. 
+                    Additionally, the publicly available Netflix Dataset from Kaggle was loaded into a separate DataFrame named `kaggle_data`. 
+                    These DataFrames serve as the foundation for the subsequent exploratory data analysis, allowing for a detailed examination of my viewing habits on Netflix over the years. The integration of both datasets provides a holistic view, combining personal watching patterns with a broader dataset for a more thorough analysis.
+                </p>
+                <p>The table below are the top 5 header of the final dataset that I have alrdy combined:</p>
                 <table border="1" class="dataframe table table-striped">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Profile Name</th>
-      <th>Start Time</th>
-      <th>Duration</th>
-      <th>Title + Episode Name</th>
-      <th>Type</th>
-      <th>Title Name</th>
-      <th>Device Type</th>
-      <th>Bookmark</th>
-      <th>Latest Bookmark</th>
-      <th>Country</th>
-      <th>Genres</th>
-      <th>Parent Genre</th>
-      <th>Show Country</th>
-      <th>Rating</th>
-      <th>Running Times</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>OWL QUEEN</td>
-      <td>26/10/2023 7:01</td>
-      <td>0:28:36</td>
-      <td>Behind Your Touch: Season 1: Episode 3</td>
-      <td>TV SHOW</td>
-      <td>Behind Your Touch</td>
-      <td>Chrome PC (Cadmium)</td>
-      <td>0:38:51</td>
-      <td>0:38:51</td>
-      <td>TR (Turkey)</td>
-      <td>comedy</td>
-      <td>Comedies</td>
-      <td>south korea</td>
-      <td>M18</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>OWL QUEEN</td>
-      <td>26/10/2023 6:20</td>
-      <td>0:38:47</td>
-      <td>Behind Your Touch: Season 1: Episode 2</td>
-      <td>TV SHOW</td>
-      <td>Behind Your Touch</td>
-      <td>Chrome PC (Cadmium)</td>
-      <td>1:06:28</td>
-      <td>1:06:28</td>
-      <td>TR (Turkey)</td>
-      <td>comedy</td>
-      <td>Comedies</td>
-      <td>south korea</td>
-      <td>M18</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>OWL QUEEN</td>
-      <td>25/10/2023 16:00</td>
-      <td>0:14:45</td>
-      <td>SKY Castle: Season 1: Episode 1</td>
-      <td>TV SHOW</td>
-      <td>SKY Castle</td>
-      <td>DefaultWidevineAndroidPhone</td>
-      <td>0:15:26</td>
-      <td>0:15:26</td>
-      <td>TR (Turkey)</td>
-      <td>drama</td>
-      <td>Drama</td>
-      <td>south korea</td>
-      <td>M18</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>OWL QUEEN</td>
-      <td>25/10/2023 4:48</td>
-      <td>0:14:17</td>
-      <td>Behind Your Touch: Season 1: Episode 2</td>
-      <td>TV SHOW</td>
-      <td>Behind Your Touch</td>
-      <td>DefaultWidevineAndroidPhone</td>
-      <td>0:26:17</td>
-      <td>Not latest view</td>
-      <td>TR (Turkey)</td>
-      <td>comedy</td>
-      <td>Comedies</td>
-      <td>south korea</td>
-      <td>M18</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>OWL QUEEN</td>
-      <td>25/10/2023 4:46</td>
-      <td>0:02:20</td>
-      <td>Behind Your Touch: Season 1: Episode 1</td>
-      <td>TV SHOW</td>
-      <td>Behind Your Touch</td>
-      <td>DefaultWidevineAndroidPhone</td>
-      <td>1:05:53</td>
-      <td>1:05:53</td>
-      <td>TR (Turkey)</td>
-      <td>comedy</td>
-      <td>Comedies</td>
-      <td>south korea</td>
-      <td>M18</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
+                    <thead>
+                        <tr style="text-align: right;">
+                        <th>Profile Name</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Title + Episode Name</th>
+                        <th>Type</th>
+                        <th>Title Name</th>
+                        <th>Device Type</th>
+                        <th>Bookmark</th>
+                        <th>Latest Bookmark</th>
+                        <th>Country</th>
+                        <th>Genres</th>
+                        <th>Parent Genre</th>
+                        <th>Show Country</th>
+                        <th>Rating</th>
+                        <th>Running Times</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                            <td>OWL QUEEN</td>
+                            <td>26/10/2023 7:01</td>
+                            <td>0:28:36</td>
+                            <td>Behind Your Touch: Season 1: Episode 3</td>
+                            <td>TV SHOW</td>
+                            <td>Behind Your Touch</td>
+                            <td>Chrome PC (Cadmium)</td>
+                            <td>0:38:51</td>
+                            <td>0:38:51</td>
+                            <td>TR (Turkey)</td>
+                            <td>comedy</td>
+                            <td>Comedies</td>
+                            <td>south korea</td>
+                            <td>M18</td>
+                            <td>1</td>
+                            </tr>
+                            <tr>
+                            <td>OWL QUEEN</td>
+                            <td>26/10/2023 6:20</td>
+                            <td>0:38:47</td>
+                            <td>Behind Your Touch: Season 1: Episode 2</td>
+                            <td>TV SHOW</td>
+                            <td>Behind Your Touch</td>
+                            <td>Chrome PC (Cadmium)</td>
+                            <td>1:06:28</td>
+                            <td>1:06:28</td>
+                            <td>TR (Turkey)</td>
+                            <td>comedy</td>
+                            <td>Comedies</td>
+                            <td>south korea</td>
+                            <td>M18</td>
+                            <td>1</td>
+                            </tr>
+                            <tr>
+                            <td>OWL QUEEN</td>
+                            <td>25/10/2023 16:00</td>
+                            <td>0:14:45</td>
+                            <td>SKY Castle: Season 1: Episode 1</td>
+                            <td>TV SHOW</td>
+                            <td>SKY Castle</td>
+                            <td>DefaultWidevineAndroidPhone</td>
+                            <td>0:15:26</td>
+                            <td>0:15:26</td>
+                            <td>TR (Turkey)</td>
+                            <td>drama</td>
+                            <td>Drama</td>
+                            <td>south korea</td>
+                            <td>M18</td>
+                            <td>1</td>
+                            </tr>
+                            <tr>
+                            <td>OWL QUEEN</td>
+                            <td>25/10/2023 4:48</td>
+                            <td>0:14:17</td>
+                            <td>Behind Your Touch: Season 1: Episode 2</td>
+                            <td>TV SHOW</td>
+                            <td>Behind Your Touch</td>
+                            <td>DefaultWidevineAndroidPhone</td>
+                            <td>0:26:17</td>
+                            <td>Not latest view</td>
+                            <td>TR (Turkey)</td>
+                            <td>comedy</td>
+                            <td>Comedies</td>
+                            <td>south korea</td>
+                            <td>M18</td>
+                            <td>1</td>
+                            </tr>
+                            <tr>
+                            <td>OWL QUEEN</td>
+                            <td>25/10/2023 4:46</td>
+                            <td>0:02:20</td>
+                            <td>Behind Your Touch: Season 1: Episode 1</td>
+                            <td>TV SHOW</td>
+                            <td>Behind Your Touch</td>
+                            <td>DefaultWidevineAndroidPhone</td>
+                            <td>1:05:53</td>
+                            <td>1:05:53</td>
+                            <td>TR (Turkey)</td>
+                            <td>comedy</td>
+                            <td>Comedies</td>
+                            <td>south korea</td>
+                            <td>M18</td>
+                            <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                 <h3>Analyze the variables & cleaning the data</h3>
     
