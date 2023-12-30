@@ -48,3 +48,15 @@ a:hover {
     overflow-x: auto;
 }
 
+table {
+    font-size: 12px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
