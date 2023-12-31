@@ -65,3 +65,9 @@ a:hover {
 .dataframe.table.table-striped th {
     background-color: #dbdbdb; /* Header background color */
 }
+
+.styled-plotly-div {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
