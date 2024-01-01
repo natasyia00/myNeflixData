@@ -80,7 +80,7 @@ a:hover {
 }
 
 .deco {
-    max-width: 50%;
-    height: auto;
-    margin: 0;
+    max-width: 40%;
+    height: 100px;
+    margin: 10px;
 }
