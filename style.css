@@ -3,6 +3,7 @@ body {
     font-size: 13px;
     line-height: 1.6;
     font-weight: 400;
+    padding: 20px;
     background-color: #fff;
     color: #333;
 }
@@ -16,7 +17,6 @@ h2, h3 {
 }
 
 header {
-    /* padding: 1em 0; */
     text-align: center;
     color: #000;
 }
